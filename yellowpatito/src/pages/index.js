@@ -1,11 +1,11 @@
-// import Banner from "../components/Banner.js"
-import Home from "../containers/Home.js"
+// import Home from "../containers/Home.js"
+import Paises from "../containers/Pais/Paises.js"
 
 function HomePage() {
     return <div>Welcome to Next.js!
 
-<Home/>
-{/* <Banner/> */}
+{/* <Home/> */}
+<Paises/>
     </div>
   }
   

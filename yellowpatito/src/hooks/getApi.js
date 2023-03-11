@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const getApiData = async () => {
+const getApi = async () => {
   try {
     const response = await axios.get('http://18.220.234.192:4000/api/users/64040284d9a91413da049e67' );
     const data = response.data;
@@ -11,4 +11,4 @@ const getApiData = async () => {
   }
 };
 
-module.exports = { getApiData };
+module.exports = { getApi };
