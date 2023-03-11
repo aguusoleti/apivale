@@ -1,9 +1,6 @@
-
- import { Paper, Typography } from "@mui/material";
-
+import { Paper, Typography } from "@mui/material";
 import React from 'react';
-import Banner from '../components/Banner.js';
-import { getApiData } from '../hooks/useGetProducts.js';
+import { getApiData } from '../hooks/getApiData.js';
 
 const Home = () => {
   const [data, setData] = React.useState(null);
@@ -28,10 +25,9 @@ const Home = () => {
   console.log(data );
   console.log("soy home" );
   return (
-    <section className="main-container">
-      <div className="cards-container">
-        {/* <Banner /> */}
-        <div>
+    <section >
+      <div >
+        {/* <div>
         <p>{data.canales[0].name}</p>
         <p>{data.canales[1].name}</p>
         </div>
@@ -47,17 +43,9 @@ const Home = () => {
         <div>
         <p>{data.paises[0].value}</p>
         <p>{data.paises[1].value}</p>
-        </div>
-        {/* <h1>{data.churns}</h1> */}
-           {/* <Typography>Holaa</Typography>
-           <a>Holaaa{data.canales[0].name}</a>
-           <Typography>{data.churns[0].name}</Typography>
-           <Typography>{data.paises}</Typography>
-           <Typography>{data.productos}</Typography>
-           <Typography>{data.idUser}</Typography>
-           <Typography>{data.__v}</Typography> */}
+        </div> */}
       </div>
     </section>
   );
 };
-export default Home
+export default Home 
